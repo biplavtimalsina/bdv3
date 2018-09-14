@@ -1,0 +1,39 @@
+<% include ../partials/header %>
+
+
+<div class="container">
+    <h1 style="text-align:center"> Enter New Request Info</h1>
+    <form action="/request" method="POST">
+        <div class="form-group row">
+            <label for="name" class="col-sm-3 col-form-label">Name</label>
+            <div class="col-sm-9">
+                <input type="text" class="form-control" placeholder="Blood Requester's Name" name="req[name]">
+            </div>
+        </div>
+        <div class="form-group row">
+            <label for="Phone Number" class="col-sm-3 col-form-label">Phone Number</label>
+            <div class="col-sm-9">
+                <input type="text" class="form-control" placeholder="Blood Requester's Phone Number" name="req[phone_number]">
+            </div>
+        </div>
+        <div class="form-group row">
+            <label for="pints" class="col-sm-3 col-form-label">Pints</label>
+            <div class="col-sm-9">
+                <input type="number" class="form-control" placeholder="Amount of blood required in Pints" name="req[pints]">
+            </div>
+        </div>
+        <div class="form-group row">
+            <label for="location" class="col-sm-3 col-form-label">Location</label>
+            <div class="col-sm-9">
+                <input type="text" class="form-control" placeholder="Location where blood is needed" name="req[location]">
+            </div>
+        </div>
+        <div class="form-group row">
+            <div class="col-sm-10">
+                <button type="submit" class="btn btn-primary">Submit</button>
+            </div>
+        </div>
+    </form>
+</div>
+
+<% include ../partials/footer %>

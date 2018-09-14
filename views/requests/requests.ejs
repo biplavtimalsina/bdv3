@@ -1,0 +1,13 @@
+<% include ../partials/header %>
+
+Blood Database Shows all requests
+
+<ul>
+<%  bloodReq.forEach(function(blood){ %>
+    <li> <%= blood.name %> - <%= blood.phone_number %> - <%= blood.location %> - <%= blood.pints %></li>  
+<%    });  %>
+</ul>
+
+<a href="request/new">Add new request</a>
+
+<% include ../partials/footer %>
